@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="@string/default_maxMarks"
+        android:summary="@string/default_maxMarks_summary"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="4"
+        android:key="prefMaxMarks" />
+
+    <EditTextPreference
+        android:title="@string/decimal_places"
+        android:summary="@string/decimal_places_summary"
+        android:inputType="number"
+        android:digits="012345"
+        android:maxLength="1"
+        android:key="prefDecimalPlaces" />
+
+    <EditTextPreference
+        android:title="Pass Percentage"
+        android:summary="Enter the percentage equal to or above which the student is considered to be passed [Default: 30]"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:key="prefPassPercent" />
+
+    <PreferenceCategory android:title="GRADE RANGE SETTINGS">
+        <ListPreference
+            android:title="Show/Hide Grades"
+            android:summary="Lets you set grade options."
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:key="gradePref" />
+        <Preference
+            android:title="Edit Rank Range"
+            android:summary="Tap to see the range of each rank."
+            android:key="rangePref"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="RANK SETTINGS">
+        <CheckBoxPreference
+            android:title="Show Rank"
+            android:defaultValue="false"
+            android:summary="This option if selected will show rank in the report card."
+            android:key="prefRank" />
+        <Preference
+            android:title="See Rank Range"
+            android:summary="Tap to see the range of each rank."
+            android:key="seeRank"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="ANALYTICS SETTINGS">
+        <CheckBoxPreference
+            android:title="Show Value on Top"
+            android:defaultValue="true"
+            android:summary="This option if selected will show the respective Y-values on top of the bars in the graph."
+            android:key="prefValOnTop" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="CLEAR DATA">
+        <Preference
+            android:title="Clear All User Data"
+            android:summary="Tap to clear all the user data saved."
+            android:key="prefClear"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
