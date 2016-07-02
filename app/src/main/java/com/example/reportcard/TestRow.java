@@ -1,8 +1,6 @@
 package com.example.reportcard;
 
-/**
- * Created by Devipriya on 7/9/2015.
- */
+
 public class TestRow {
 
     public String testName;
