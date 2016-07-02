@@ -1,8 +1,6 @@
 package com.example.reportcard;
 
-/**
- * Created by Devipriya on 10-Jul-15.
- */
+
 public class MarksRow {
 
     public String subjectName;
