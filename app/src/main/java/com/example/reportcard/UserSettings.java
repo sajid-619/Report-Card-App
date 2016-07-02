@@ -1,4 +1,4 @@
-package com.sajid.reportcard;
+package com.example.reportcard;
 
 import android.app.AlertDialog;
 import android.content.Context;
